@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万史心藏博物馆</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js" onload="console.log('Model Viewer loaded successfully')" onerror="console.error('Failed to load Model Viewer')"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-actions header-actions-left">
+            <a class="header-btn btn-history" href="https://digicol.dpm.org.cn/" target="_blank" rel="noopener"
+                aria-label="前往故宫博物馆数字藏品">历史</a>
+        </div>
+        <h1>万史心藏博物馆</h1>
+        <div class="header-actions header-actions-right">
+            <a class="header-btn btn-profile" href="profile.html" aria-label="进入个人页面">个人</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="diary-display-section">
+            <h2>首页 · 时光回响</h2>
+            <div id="diaries-container" class="examples-grid"></div>
+        </section>
+    </main>
+
+    <!-- 悬浮添加按钮 -->
+    <button id="fab-add" class="fab-add" aria-label="添加日记">+</button>
+
+    <!-- 记录此刻 · 弹窗 -->
+    <div id="diary-modal" class="diary-modal" aria-hidden="true">
+        <div class="diary-modal__backdrop"></div>
+        <div class="diary-modal__content" role="dialog" aria-modal="true" aria-labelledby="diary-modal-title">
+            <button class="diary-modal__close" id="diary-modal-close" aria-label="关闭">×</button>
+            <section id="diary-input-section">
+                <h2 id="diary-modal-title">记录此刻</h2>
+                <input type="text" id="diary-title" placeholder="请输入标题">
+                <textarea id="diary-textarea" placeholder="在这里写下你的所思所想..."></textarea>
+                <div class="mood-tags">
+                    <label>心情标签：</label>
+                    <div class="mood-options">
+                        <button type="button" class="mood-tag" data-mood="喜悦">喜悦</button>
+                        <button type="button" class="mood-tag" data-mood="忧伤">忧伤</button>
+                        <button type="button" class="mood-tag" data-mood="愤怒">愤怒</button>
+                        <button type="button" class="mood-tag" data-mood="平静">平静</button>
+                        <button type="button" class="mood-tag" data-mood="思念">思念</button>
+                        <button type="button" class="mood-tag" data-mood="孤独">孤独</button>
+                    </div>
+                    <div class="custom-mood">
+                        <input type="text" id="custom-mood-input" placeholder="或输入自定义心情标签">
+                        <button type="button" id="add-custom-mood">添加</button>
+                    </div>
+                </div>
+                <button id="save-button">封存记忆</button>
+                <div id="loading-spinner"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
