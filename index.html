@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yunndan - 数字追梦者</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 背景粒子效果 -->
+    <div class="particles-container">
+        <canvas id="particles"></canvas>
+    </div>
+
+    <!-- 主导航 -->
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <span class="brand-text">Yunndan</span>
+            <span class="brand-subtitle">筠萏/匀旦</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about" class="nav-link active" data-target="about">关于我</a>
+            <a href="#hobbies" class="nav-link" data-target="hobbies">爱好展示</a>
+            <a href="#achievements" class="nav-link" data-target="achievements">履历成就</a>
+            <a href="#projects" class="nav-link" data-target="projects">项目展示</a>
+            <a href="#contact" class="nav-link" data-target="contact">联系方式</a>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- 主容器 -->
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">
+                        <span class="avatar-text">O</span>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Hello, I'm</span>
+                    <span class="title-main">Yunndan 筠萏/匀旦</span>
+                    <span class="title-subtitle">数字追梦者 · 全栈创新者</span>
+                </h1>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">985</span>
+                        <span class="stat-label">大连理工大学</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1%</span>
+                        <span class="stat-label">年级排名</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">国一</span>
+                        <span class="stat-label">美国数学建模</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <button class="cta-primary" onclick="scrollToSection('about')">
+                        <span>探索我的世界</span>
+                        <i class="arrow-down">↓</i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">👨‍💻</span>
+                    关于我
+                </h2>
+                <div class="title-line-decoration"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card personality">
+                    <div class="card-header">
+                        <h3>🧠 性格特质</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>介于I与E之间，理性思考者。热爱探索新技术，善于独立思考和解决问题。精益求精，注重细节。</p>
+                        <div class="traits-list">
+                            <span class="trait-tag">理性思维</span>
+                            <span class="trait-tag">创新精神</span>
+                            <span class="trait-tag">极致追求</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card background">
+                    <div class="card-header">
+                        <h3>🎓 教育背景</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>大连理工大学 → 计算机科学与技术专业</p>
+                        <p>经济学转专业成功，年级排名前1%</p>
+                        <div class="achievement-highlight">
+                            <span class="highlight-text">转专业面试断层第一名</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card philosophy">
+                    <div class="card-header">
+                        <h3>🚀 人生理念</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>相信技术改变世界，在数字世界中寻找创造的乐趣，用代码实现想象。</p>
+                        <div class="philosophy-quote">
+                            "Stay hungry, stay foolish"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🎨</span>
+                    我的爱好
+                </h2>
+                <div class="title-line-decoration"></div>
+            </div>
+            <div class="hobbies-container">
+
+                <div class="hobby-card sketch">
+                    <div class="hobby-icon">✏️</div>
+                    <h3>写实素描</h3>
+                    <p>用铅笔描绘世界的真实，在黑白灰的世界里寻找光影的美感和细节的魅力。</p>
+                    <div class="hobby-image">
+                        <img src="image/2.png" alt="素描作品" loading="lazy">
+                    </div>
+                </div>
+                <div class="hobby-card volleyball">
+                    <div class="hobby-icon">🏐</div>
+                    <h3>排球等</h3>
+                    <p>其实也就略知一二，并且没有排球的图片~ 这个仍然是写实素描的图片啦</p>
+                    <div class="hobby-image">
+                        <img src="image/1.png" alt="排球相关图片" loading="lazy">
+                    </div>
+                </div>
+                <div class="hobby-card calligraphy">
+                    <div class="hobby-icon">🖋️</div>
+                    <h3>硬笔书法</h3>
+                    <p>一笔一划间的修行，在汉字的结构美中感受传统文化的底蕴和内心的宁静。</p>
+                    <div class="hobby-image">
+                        <img src="image/3.png" alt="书法作品" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🏆</span>
+                    履历成就
+                </h2>
+                <div class="title-line-decoration"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>高考进入大连理工大学</h3>
+                        <p class="timeline-date">2024.9</p>
+                        <p>经济学类（包含电子商务与经济学），高于分数线7分。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>年级排名前1%</h3>
+                        <p class="timeline-date">2025.1</p>
+                        <p>大一时利用应试天赋，线性代数、概统与专业课等多门课程满分，年级排名进入前1%。</p>
+                        <div class="achievement-tags">
+                            <span class="achievement-tag">线性代数满分</span>
+                            <span class="achievement-tag">概率论满分</span>
+                            <span class="achievement-tag">专业课满分</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>美国数学建模：国际一等奖</h3>
+                        <p class="timeline-date">2025.2</p>
+                        <p>作为大一新生单打独斗，在美国数学建模竞赛中获得国际一等奖。</p>
+                        <div class="achievement-image">
+                            <img src="image/5.png" alt="数学建模获奖证书" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>转专业面试断层第一</h3>
+                        <p class="timeline-date">2025.7</p>
+                        <p>在通过率0.2的转专业面试中获得断层第一名，成功转入计算机科学与技术专业。</p>
+                        <div class="achievement-highlight">
+                            <span>相当于高考多加40多分</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>大一全年探索成果</h3>
+                        <p class="timeline-date">2025年8月</p>
+                        <p>大一不断探索折腾，在多个领域取得优异成绩，体现了全面发展和持续进步的能力。</p>
+                        <div class="achievement-tags">
+                            <span class="achievement-tag">美国数模：国际一等奖</span>
+                            <span class="achievement-tag">数据物省级二等奖</span>
+                            <span class="achievement-tag">大学生广告艺术大赛一等奖</span>
+                            <span class="achievement-tag">新生书香例行答辩赛一等奖</span>
+                            <span class="achievement-tag">三创赛二等奖</span>
+                            <span class="achievement-tag">体育一96分</span>
+                            <span class="achievement-tag">体育二97分</span>
+                        </div>
+                        <div class="achievement-image">
+                            <img src="image/7.png" alt="大一探索成果展示" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">💻</span>
+                    项目展示
+                </h2>
+                <div class="title-line-decoration"></div>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>计算机实验室研究</h3>
+                        <span class="project-status">进行中</span>
+                    </div>
+                    <div class="project-content">
+                        <p>进入计算机老师的实验室，学习前端后端开发技术，目前专注于agent方向的联邦式学习研究。</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">若依框架</span>
+                            <span class="tech-tag">前后端Vue链接</span>
+                            <span class="tech-tag">联邦学习</span>
+                            <span class="tech-tag">AI Agent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-images">
+                    <div class="project-image">
+                        <img src="image/6.png" alt="项目成果1" loading="lazy">
+                        <div class="image-overlay">
+                            <span>项目成果展示</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="image/7.png" alt="项目成果2" loading="lazy">
+                        <div class="image-overlay">
+                            <span>技术架构图</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">📧</span>
+                    联系我
+                </h2>
+                <div class="title-line-decoration"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>让我们一起创造未来</h3>
+                    <p>如果你对我的经历感兴趣，或者想要交流技术、学术问题，欢迎与我联系！</p>
+                </div>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">📧</div>
+                        <div class="method-content">
+                            <h4>邮件联系</h4>
+                            <p>15826773096@163.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">💬</div>
+                        <div class="method-content">
+                            <h4>微信交流</h4>
+                            <p>www15826773096</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">🔗</div>
+                        <div class="method-content">
+                            <h4>GitHub</h4>
+                            <p>https://github.com/15826773096
+                                尚待开发嘿嘿</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
